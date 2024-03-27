@@ -82,10 +82,21 @@ class _SwippableStackState extends State<SwippableStack>
     // Add widget for index 0 (on top of the stack)
     positionedWidgets.add(
       Positioned(
-        child: CardWidget(
-          image: Image.asset(
-            imageList[0],
-            fit: BoxFit.cover,
+        child: Dismissible(
+          key: UniqueKey(),
+          onDismissed: (direction) {
+            print(direction.name);
+            if (imageList.length > 1) {
+              setState(() {
+                imageList.removeAt(0);
+              });
+            }
+          },
+          child: CardWidget(
+            image: Image.asset(
+              imageList[0],
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
