@@ -85,7 +85,6 @@ class _SwippableStackState extends State<SwippableStack>
         child: Dismissible(
           key: UniqueKey(),
           onDismissed: (direction) {
-            print(direction.name);
             if (imageList.length > 1) {
               setState(() {
                 imageList.removeAt(0);
