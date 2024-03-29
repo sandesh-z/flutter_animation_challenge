@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_challenge/animated_container/animated_container.dart';
 import 'package:flutter_animation_challenge/animated_image/animated_image.dart';
+import 'package:flutter_animation_challenge/curves/curves.dart';
 import 'package:flutter_animation_challenge/swippable_stack/swippable_stack.dart';
 
 class HomePage extends StatelessWidget {
@@ -33,6 +34,12 @@ class HomePage extends StatelessWidget {
               pageName: "Zoomed Image Effect",
               onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(builder: (_) => const AnimatedImage())),
+            ),
+            const SizedBox(height: 10.0),
+            _PageItem(
+              pageName: "Curves",
+              onTap: () => Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const CurvesPage())),
             )
           ],
         ));
