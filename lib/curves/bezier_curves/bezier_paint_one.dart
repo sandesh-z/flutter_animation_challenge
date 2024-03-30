@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BezierCurveOne extends CustomPainter {
+class BzierPaintOne extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
