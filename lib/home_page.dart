@@ -3,6 +3,7 @@ import 'package:flutter_animation_challenge/animated_container/animated_containe
 import 'package:flutter_animation_challenge/animated_image/animated_image.dart';
 import 'package:flutter_animation_challenge/curves/curves.dart';
 import 'package:flutter_animation_challenge/curves/wave/wave.dart';
+import 'package:flutter_animation_challenge/shapes/shapes.dart';
 import 'package:flutter_animation_challenge/swippable_stack/swippable_stack.dart';
 
 class HomePage extends StatelessWidget {
@@ -47,6 +48,12 @@ class HomePage extends StatelessWidget {
               pageName: "Wave",
               onTap: () => Navigator.of(context)
                   .push(MaterialPageRoute(builder: (_) => const WavePage())),
+            ),
+            const SizedBox(height: 10.0),
+            _PageItem(
+              pageName: "Shapes",
+              onTap: () => Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const ShapePage())),
             )
           ],
         ));
