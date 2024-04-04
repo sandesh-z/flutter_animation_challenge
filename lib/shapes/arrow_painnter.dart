@@ -25,7 +25,7 @@ class ArrowPainter extends CustomPainter {
 
     path.lineTo(centerX, centerY + 20);
     path.lineTo(0, centerY + 20);
-    path.close(); // close the path to draw a complete shape
+    path.close();
 
     canvas.drawPath(path, paint);
   }

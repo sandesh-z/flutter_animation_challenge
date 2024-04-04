@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_challenge/shapes/arrow_painnter.dart';
 import 'package:flutter_animation_challenge/shapes/daimond_painter.dart';
-import 'package:flutter_animation_challenge/shapes/hexagon_painter.dart';
 
 class ShapePage extends StatelessWidget {
   const ShapePage({super.key});
@@ -16,7 +15,6 @@ class ShapePage extends StatelessWidget {
             children: [
               const SizedBox(height: 20.0),
               _shapeItem(painter: DiamondPainter()),
-              _shapeItem(painter: HexagonPainter()),
               _shapeItem(painter: ArrowPainter()),
             ],
           ),
