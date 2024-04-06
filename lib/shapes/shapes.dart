@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_challenge/shapes/arrow_painnter.dart';
+import 'package:flutter_animation_challenge/shapes/concentric_circle_painter.dart';
 import 'package:flutter_animation_challenge/shapes/daimond_painter.dart';
 import 'package:flutter_animation_challenge/shapes/hexagon_painter.dart';
 
@@ -18,6 +19,7 @@ class ShapePage extends StatelessWidget {
               _shapeItem(painter: DiamondPainter()),
               _shapeItem(painter: ArrowPainter()),
               _shapeItem(painter: HexagonPainter()),
+              _shapeItem(painter: ConcentricCirclePainter()),
             ],
           ),
         ),

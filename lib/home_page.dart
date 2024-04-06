@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation_challenge/animated_circle/animated_circle.dart';
 import 'package:flutter_animation_challenge/animated_container/animated_container.dart';
 import 'package:flutter_animation_challenge/animated_image/animated_image.dart';
 import 'package:flutter_animation_challenge/curves/curves.dart';
@@ -54,6 +55,12 @@ class HomePage extends StatelessWidget {
               pageName: "Shapes",
               onTap: () => Navigator.of(context)
                   .push(MaterialPageRoute(builder: (_) => const ShapePage())),
+            ),
+            const SizedBox(height: 10.0),
+            _PageItem(
+              pageName: "Animated Circle",
+              onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const AnimatedCircle())),
             )
           ],
         ));
