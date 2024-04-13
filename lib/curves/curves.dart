@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animation_challenge/curves/bezier_curves/bezier_paint_one.dart';
 import 'package:flutter_animation_challenge/curves/bezier_curves/bezier_paint_two.dart';
 import 'package:flutter_animation_challenge/curves/bezier_curves/sine_curve.dart';
+import 'package:flutter_animation_challenge/curves/painters/spline_painter.dart';
 
 class CurvesPage extends StatelessWidget {
   const CurvesPage({super.key});
@@ -16,6 +17,7 @@ class CurvesPage extends StatelessWidget {
               _curveContainer(painter: BzierPaintOne()),
               _curveContainer(painter: BezierPaintTwo()),
               _curveContainer(painter: SineCurvePainter()),
+              _curveContainer(painter: DottedSemicirclePainter()),
             ],
           ),
         ),

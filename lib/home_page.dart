@@ -63,6 +63,7 @@ class HomePage extends StatelessWidget {
               onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(builder: (_) => const AnimatedCircle())),
             ),
+            const SizedBox(height: 10.0),
             _PageItem(
               pageName: "Shake Widget",
               onTap: () => Navigator.of(context)
